@@ -26,8 +26,8 @@ require('cmp').setup {
   })
 }
 
- -- Set configuration for specific filetype.
- cmp.setup.filetype('gitcommit', {
+-- Set configuration for specific filetype.
+cmp.setup.filetype('gitcommit', {
   sources = cmp.config.sources({
     { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
   }, {
@@ -55,8 +55,8 @@ cmp.setup.cmdline(':', {
 
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
-    virtual_text = true,
-    underline = true,
-    signs = true,
-  }
+  virtual_text = true,
+  underline = true,
+  signs = true,
+}
 )
