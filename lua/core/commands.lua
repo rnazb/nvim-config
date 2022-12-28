@@ -1,3 +1,4 @@
+-- Close nvim-tree when it's the last buffer
 local modifiedBufs = function(bufs)
   local t = 0
   for k, v in pairs(bufs) do
