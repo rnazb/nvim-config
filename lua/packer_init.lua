@@ -71,6 +71,13 @@ return packer.startup(function(use)
       require('nvim-autopairs').setup {}
     end
   }
+  -- Autoclose tags
+  use { 
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require('plugins/treesitter')
+    end 
+  }
 
   -- LSP
   use 'neovim/nvim-lspconfig'
