@@ -93,6 +93,11 @@ return packer.startup(function(use)
     run = ':TSUpdate'
   }
 
+  use {
+    'm-demare/hlargs.nvim',
+    requires = { 'nvim-treesitter/nvim-treesitter' }
+  }
+
   -- Startup
   use {
     'goolord/alpha-nvim',

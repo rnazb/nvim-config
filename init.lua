@@ -8,7 +8,9 @@ require('core/colors')
 require('plugins/telescope')
 require('plugins/nvim-cmp')
 require('plugins/nvim-tree')
+require('plugins/treesitter')
 require('plugins/lualine')
+require('plugins/hlargs')
 
 require('lsp/lspconfig')
 
