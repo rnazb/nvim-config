@@ -114,6 +114,9 @@ return packer.startup(function(use)
     end
   }
 
+  -- Indent blankline
+  use 'lukas-reineke/indent-blankline.nvim'
+
   -- Themes
   use 'folke/tokyonight.nvim'
   use 'marko-cerovac/material.nvim'

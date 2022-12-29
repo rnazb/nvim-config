@@ -11,7 +11,6 @@ require('plugins/nvim-tree')
 require('plugins/treesitter')
 require('plugins/lualine')
 require('plugins/hlargs')
+require('plugins/indent-blankline')
 
 require('lsp/lspconfig')
-
--- require('plugins/indent-blankline')
