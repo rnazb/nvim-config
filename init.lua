@@ -12,5 +12,6 @@ require('plugins/treesitter')
 require('plugins/lualine')
 require('plugins/hlargs')
 require('plugins/indent-blankline')
+require('plugins/jest')
 
 require('lsp/lspconfig')

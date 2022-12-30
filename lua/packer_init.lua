@@ -72,11 +72,11 @@ return packer.startup(function(use)
     end
   }
   -- Autoclose tags
-  use { 
+  use {
     'windwp/nvim-ts-autotag',
     config = function()
       require('plugins/treesitter')
-    end 
+    end
   }
 
   -- LSP
@@ -122,6 +122,9 @@ return packer.startup(function(use)
 
   -- Editorconfig
   use 'editorconfig/editorconfig-vim'
+
+  -- Jest
+  use 'mattkubej/jest.nvim'
 
   -- Themes
   use 'folke/tokyonight.nvim'
