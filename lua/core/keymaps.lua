@@ -1,4 +1,4 @@
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 local function map_key(mode, lhs, rhs)
   vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true, silent = true })
@@ -8,6 +8,7 @@ end
 map_key('n', '<leader>h', ':noh <CR>')
 
 -- Telescope
+map_key('n', '<leader>s', ':Telescope<CR>')
 map_key('n', '<leader>f', ':Telescope find_files hidden=true<CR>')
 
 -- Nvim-tree
