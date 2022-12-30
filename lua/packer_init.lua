@@ -117,6 +117,9 @@ return packer.startup(function(use)
   -- Indent blankline
   use 'lukas-reineke/indent-blankline.nvim'
 
+  -- Git tracking
+  use 'rhysd/git-messenger.vim'
+
   -- Themes
   use 'folke/tokyonight.nvim'
   use 'marko-cerovac/material.nvim'
