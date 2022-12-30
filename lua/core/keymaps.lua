@@ -8,7 +8,7 @@ end
 map_key('n', '<leader>h', ':noh <CR>')
 
 -- Telescope
-map_key('n', '<leader>f', ':Telescope find_files<CR>')
+map_key('n', '<leader>f', ':Telescope find_files hidden=true<CR>')
 
 -- Nvim-tree
 map_key('n', '<leader>t', ':NvimTreeToggle <CR>')

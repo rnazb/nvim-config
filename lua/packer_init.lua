@@ -120,6 +120,9 @@ return packer.startup(function(use)
   -- Git tracking
   use 'rhysd/git-messenger.vim'
 
+  -- Editorconfig
+  use 'editorconfig/editorconfig-vim'
+
   -- Themes
   use 'folke/tokyonight.nvim'
   use 'marko-cerovac/material.nvim'
