@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 
 local function map_key(mode, lhs, rhs)
-  vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true, silent = true })
+  vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true })
 end
 
 -- Remove highlight
