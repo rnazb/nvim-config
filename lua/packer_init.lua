@@ -42,6 +42,9 @@ return packer.startup(function(use)
     }
   }
 
+  -- Floaterm
+  use 'voldikss/vim-floaterm'
+
   -- Tree explorer
   use {
     'nvim-tree/nvim-tree.lua',

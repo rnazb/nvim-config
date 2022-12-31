@@ -15,6 +15,15 @@ map_key('n', '<Leader>f', ':Telescope find_files hidden=true<CR>')
 -- Nvim-tree
 map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')
 
+-- Terminal mode
+map_key('t', '<Leader>d', '<C-\\><C-n>')
+
+-- Floaterm
+map_key('n', '<Leader>`', ':FloatermNew --width=0.95<CR>')
+map_key('n', '<Leader>`s', ':FloatermShow<CR>')
+map_key('n', '<Leader>`h', ':FloatermHide<CR>')
+map_key('n', '<Leader>`t', ':FloatermToggle<CR>')
+
 
 -- Move a line of text Alt+[j/k]
 map_key('n', '<M-j>', [[mz:m+<CR>`z]])
