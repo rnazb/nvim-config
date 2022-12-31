@@ -23,6 +23,7 @@ map_key('n', '<Leader>`', ':FloatermNew --height=0.8 --width=0.95<CR>')
 map_key('n', '<Leader>`s', ':FloatermShow<CR>')
 map_key('n', '<Leader>`h', ':FloatermHide<CR>')
 map_key('n', '<Leader>`t', ':FloatermToggle<CR>')
+map_key('n', '<Leader>`k', ':FloatermKill<CR>')
 
 
 -- Move a line of text Alt+[j/k]
