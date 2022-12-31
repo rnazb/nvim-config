@@ -113,7 +113,8 @@ return packer.startup(function(use)
     'goolord/alpha-nvim',
     requires = { 'nvim-tree/nvim-web-devicons' },
     config = function()
-      require 'alpha'.setup(require 'alpha.themes.startify'.config)
+      -- require 'alpha'.setup(require 'alpha.themes.startify'.config)
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
     end
   }
 
@@ -122,6 +123,7 @@ return packer.startup(function(use)
 
   -- Git tracking
   use 'rhysd/git-messenger.vim'
+	use 'airblade/vim-gitgutter'
 
   -- Editorconfig
   use 'editorconfig/editorconfig-vim'

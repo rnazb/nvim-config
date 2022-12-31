@@ -16,7 +16,7 @@ map_key('n', '<Leader>f', ':Telescope find_files hidden=true<CR>')
 map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')
 
 -- Terminal mode
-map_key('t', '<Leader>d', '<C-\\><C-n>')
+map_key('t', ',dd', '<C-\\><C-n>')
 
 -- Floaterm
 map_key('n', '<Leader>`', ':FloatermNew --height=0.8 --width=0.95<CR>')
