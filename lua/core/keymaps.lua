@@ -19,7 +19,7 @@ map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')
 map_key('t', '<Leader>d', '<C-\\><C-n>')
 
 -- Floaterm
-map_key('n', '<Leader>`', ':FloatermNew --width=0.95<CR>')
+map_key('n', '<Leader>`', ':FloatermNew --height=0.8 --width=0.95<CR>')
 map_key('n', '<Leader>`s', ':FloatermShow<CR>')
 map_key('n', '<Leader>`h', ':FloatermHide<CR>')
 map_key('n', '<Leader>`t', ':FloatermToggle<CR>')
