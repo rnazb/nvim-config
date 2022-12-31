@@ -32,7 +32,7 @@ end
 
 local lsp_flags = {
   -- This is the default in Nvim 0.7+
-  debounce_text_changes = 150,
+  debounce_text_changes = 100,
 }
 
 

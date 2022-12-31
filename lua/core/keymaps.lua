@@ -5,14 +5,15 @@ local function map_key(mode, lhs, rhs)
 end
 
 -- Remove highlight
-map_key('n', '<leader>h', ':noh <CR>')
+map_key('n', '<Leader>h', ':noh <CR>')
 
 -- Telescope
-map_key('n', '<leader>t', ':Telescope<CR>')
-map_key('n', '<leader>f', ':Telescope find_files hidden=true<CR>')
+map_key('n', '<Leader>t', ':Telescope<CR>')
+map_key('n', ',f', ':Telescope find_files<CR>') -- dunno why yet but <Leader>f or <Leader><any> has a delay on this command
+map_key('n', '<Leader>f', ':Telescope find_files hidden=true<CR>')
 
 -- Nvim-tree
-map_key('n', '<leader>b', ':NvimTreeToggle <CR>')
+map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')
 
 
 -- Move a line of text Alt+[j/k]
