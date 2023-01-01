@@ -1,44 +1,49 @@
 -- Options
 -------------------------------------------------------------------------------
+
+local opt = vim.opt
+local global_opt = vim.g
+local buff_opt = vim.bo
+
 -- smart search
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+opt.ignorecase = true
+opt.smartcase = true
 
 -- tabs are two spaces
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.opt.autoindent = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.autoindent = true
 
 -- line break configuration
-vim.opt.breakindent = true
-vim.opt.linebreak = true
-vim.opt.wrap = true
+opt.breakindent = true
+opt.linebreak = true
+opt.wrap = true
 
 -- show line numbers and highlight cursor line number
-vim.opt.number = true
-vim.opt.relativenumber = false
-vim.opt.cursorline = true
-vim.opt.cursorlineopt = "number"
+opt.number = true
+opt.relativenumber = false
+opt.cursorline = true
+opt.cursorlineopt = "number"
 
 -- swap file management
-vim.bo.swapfile = false
-vim.opt.swapfile = false
+buff_opt.swapfile = false
+opt.swapfile = false
 
 -- misc
-vim.opt.clipboard = "unnamedplus"
-vim.opt.mouse = "a"
-vim.opt.wildmode = "longest,full:longest,full"
+opt.clipboard = "unnamedplus"
+opt.mouse = "a"
+opt.wildmode = "longest,full:longest,full"
 
-vim.opt.termguicolors = true -- 24-bit RGB color in the TUI
-vim.opt.undofile = true -- persistent undo history
-vim.opt.showmode = false -- do not show mode message on last line
-vim.opt.hidden = true -- switch buffers without having to save changes
-vim.opt.joinspaces = false -- insert one space when joining two sentences
-vim.opt.confirm = true -- raise dialog asking to save changes when commands like ':q' fail
-vim.opt.title = true -- set terminal window title to something descriptive
+opt.termguicolors = true -- 24-bit RGB color in the TUI
+opt.undofile = true -- persistent undo history
+opt.showmode = false -- do not show mode message on last line
+opt.hidden = true -- switch buffers without having to save changes
+opt.joinspaces = false -- insert one space when joining two sentences
+opt.confirm = true -- raise dialog asking to save changes when commands like ':q' fail
+opt.title = true -- set terminal window title to something descriptive
 
 -- nvim-tree netrw Override
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+global_opt.loaded_netrw = 1
+global_opt.loaded_netrwPlugin = 1
