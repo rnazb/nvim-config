@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 
 local function map_key(mode, lhs, rhs)
   vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true })
@@ -17,7 +17,7 @@ map_key('n', '<Leader>fg', ':Telescope live_grep<CR>')
 map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')
 
 -- Terminal mode
-map_key('t', ',dd', '<C-\\><C-n>')
+map_key('t', '<Leader>dd', '<C-\\><C-n>')
 
 -- Floaterm
 map_key('n', '<Leader>`', ':FloatermNew --height=0.8 --width=0.95<CR>')
