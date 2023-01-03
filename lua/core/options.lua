@@ -44,6 +44,8 @@ opt.joinspaces = false -- insert one space when joining two sentences
 opt.confirm = true -- raise dialog asking to save changes when commands like ':q' fail
 opt.title = true -- set terminal window title to something descriptive
 
+opt.timeoutlen = 120
+
 -- nvim-tree netrw Override
 global_opt.loaded_netrw = 1
 global_opt.loaded_netrwPlugin = 1
