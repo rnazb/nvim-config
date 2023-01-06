@@ -1,7 +1,7 @@
 vim.g.mapleader = ','
 
 local function map_key(mode, lhs, rhs)
-  vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true })
+  vim.api.nvim_set_keymap(mode, lhs, rhs, { noremap = true, silent = true})
 end
 
 -- Remove highlight
@@ -27,7 +27,6 @@ map_key('n', '<Leader>`h', ':FloatermHide<CR>')
 map_key('n', '<Leader>`t', ':FloatermToggle<CR>')
 map_key('n', '<Leader>`k', ':FloatermKill<CR>')
 
-
 -- Move a line of text Alt+[j/k]
 map_key('n', '<M-j>', [[mz:m+<CR>`z]])
 map_key('n', '<M-k>', [[mz:m-2<CR>`z]])
@@ -39,3 +38,7 @@ map_key('n', '<C-k>', ':wincmd k<CR>')
 map_key('n', '<C-j>', ':wincmd j<CR>')
 map_key('n', '<C-h>', ':wincmd h<CR>')
 map_key('n', '<C-l>', ':wincmd l<CR>')
+
+-- Window management
+map_key('n', '<Leader>sv', '<C-w>v')
+map_key('n', '<Leader>sh', '<C-w>s')

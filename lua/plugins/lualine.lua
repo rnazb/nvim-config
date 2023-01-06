@@ -56,7 +56,7 @@ require('lualine').setup({
       sources = { 'nvim_diagnostic' },
       sections = { 'error', 'warn', 'info' }
     } },
-    lualine_x = { 'encoding' },
+    lualine_x = { { 'filename', path = 1 }, 'encoding' },
     lualine_y = { 'progress' },
     lualine_z = { { function()
       return ''
