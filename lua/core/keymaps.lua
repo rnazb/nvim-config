@@ -15,6 +15,7 @@ map_key('n', '<Leader>fg', ':Telescope live_grep<CR>')
 
 -- Nvim-tree
 map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')
+map_key('n', '<Leader>bf', ':NvimTreeFindFileToggle <CR>')
 
 -- Terminal mode
 map_key('t', '<Leader>dd', '<C-\\><C-n>')
