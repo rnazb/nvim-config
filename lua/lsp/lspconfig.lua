@@ -1,3 +1,5 @@
+local util = require('lspconfig/util')
+
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
@@ -77,4 +79,21 @@ require('lspconfig')['sumneko_lua'].setup {
       },
     }
   }
+}
+
+require('lspconfig')['gopls'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+  fileTypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+  cmd = { 'gopls', 'serve' },
+  root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+    settings = {
+      gopls = {
+        analyses = {
+          unusedparams = true,
+        },
+        staticcheck = true,
+      }
+    }
 }

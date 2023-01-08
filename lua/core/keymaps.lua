@@ -42,3 +42,6 @@ map_key('n', '<C-l>', ':wincmd l<CR>')
 -- Window management
 map_key('n', '<Leader>sv', '<C-w>v')
 map_key('n', '<Leader>sh', '<C-w>s')
+
+-- Go to def in split
+map_key('n', '<Leader>gd', 'gv :vsplit<CR>gd')
