@@ -9,9 +9,12 @@ map_key('n', '<Leader>h', ':noh <CR>')
 
 -- Telescope
 map_key('n', '<Leader>t', ':Telescope<CR>')
-map_key('n', '<Leader>f', ':Telescope find_files<CR>') -- dunno why yet but <Leader>f or <Leader><any> has a delay on this command
+map_key('n', '<Leader>f', ':Telescope find_files<CR>')
 map_key('n', '<Leader>fh', ':Telescope find_files hidden=true<CR>')
 map_key('n', '<Leader>fg', ':Telescope live_grep<CR>')
+map_key('n', '<Leader>fd', ':Telescope diagnostics<CR>')
+map_key('n', '<Leader>tr', ':Telescope lsp_references<CR>')
+map_key('n', '<Leader>td', ':Telescope lsp_definitions<CR>')
 
 -- Nvim-tree
 map_key('n', '<Leader>b', ':NvimTreeToggle <CR>')

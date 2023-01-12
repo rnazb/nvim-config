@@ -15,3 +15,4 @@ require('plugins/indent-blankline')
 require('plugins/jest')
 
 require('lsp/lspconfig')
+require('plugins/null-ls')

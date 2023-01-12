@@ -35,6 +35,7 @@ opt.swapfile = false
 opt.clipboard = "unnamedplus"
 opt.mouse = "a"
 opt.wildmode = "longest,full:longest,full"
+opt.completeopt = "menuone,noselect"
 
 opt.termguicolors = true -- 24-bit RGB color in the TUI
 opt.undofile = true -- persistent undo history

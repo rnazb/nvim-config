@@ -97,6 +97,12 @@ return packer.startup(function(use)
     }
   }
 
+  -- Null-ls
+  use({
+    'jose-elias-alvarez/null-ls.nvim',
+    requires = {'nvim-lua/plenary.nvim'}
+  })
+
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
