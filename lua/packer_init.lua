@@ -96,6 +96,7 @@ return packer.startup(function(use)
       { 'hrsh7th/vim-vsnip' }
     }
   }
+  use 'jparise/vim-graphql'
 
   -- Null-ls
   use({
@@ -141,7 +142,6 @@ return packer.startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'marko-cerovac/material.nvim'
   use 'dracula/vim'
-  use 'embark-theme/vim'
   use 'jacoborus/tender.vim'
   use 'navarasu/onedark.nvim'
   use 'morhetz/gruvbox'

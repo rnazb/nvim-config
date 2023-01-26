@@ -23,7 +23,7 @@ opt.wrap = true
 
 -- show line numbers and highlight cursor line number
 opt.number = true
-opt.relativenumber = false
+opt.relativenumber = true
 opt.cursorline = true
 opt.cursorlineopt = "number"
 

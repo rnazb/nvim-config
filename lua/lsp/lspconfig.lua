@@ -37,12 +37,12 @@ local lsp_flags = {
   debounce_text_changes = 100,
 }
 
-
+local lsp_config = require('lspconfig')
 local capabilities = require('cmp_nvim_lsp').default_capabilities(
   vim.lsp.protocol.make_client_capabilities()
 )
 
-require('lspconfig')['tsserver'].setup {
+lsp_config['tsserver'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
@@ -50,13 +50,13 @@ require('lspconfig')['tsserver'].setup {
   capabilities = capabilities
 }
 
-require('lspconfig')['pyright'].setup {
+lsp_config['pyright'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
   capabilities = capabilities
 }
 
-require('lspconfig')['sumneko_lua'].setup {
+lsp_config['sumneko_lua'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
   capabilities = capabilities,
@@ -81,7 +81,7 @@ require('lspconfig')['sumneko_lua'].setup {
   }
 }
 
-require('lspconfig')['gopls'].setup {
+lsp_config['gopls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
   capabilities = capabilities,
@@ -97,3 +97,5 @@ require('lspconfig')['gopls'].setup {
       }
     }
 }
+
+lsp_config['solargraph'].setup {}
