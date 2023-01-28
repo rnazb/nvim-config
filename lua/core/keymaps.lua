@@ -30,6 +30,11 @@ map_key('n', '<Leader>`h', ':FloatermHide<CR>')
 map_key('n', '<Leader>`t', ':FloatermToggle<CR>')
 map_key('n', '<Leader>`k', ':FloatermKill<CR>')
 
+-- Git diff view
+map_key('n', '<Leader>dl', ':DiffviewLog<CR>')
+map_key('n', '<Leader>do', ':DiffviewOpen<CR>')
+map_key('n', '<Leader>df', ':DiffviewFileHistory<CR>')
+
 -- Move a line of text Alt+[j/k]
 map_key('n', '<M-j>', [[mz:m+<CR>`z]])
 map_key('n', '<M-k>', [[mz:m-2<CR>`z]])

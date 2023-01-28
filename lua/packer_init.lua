@@ -96,7 +96,6 @@ return packer.startup(function(use)
       { 'hrsh7th/vim-vsnip' }
     }
   }
-  use 'jparise/vim-graphql'
 
   -- Null-ls
   use({
@@ -131,6 +130,7 @@ return packer.startup(function(use)
   -- Git tracking
   use 'rhysd/git-messenger.vim'
 	use 'airblade/vim-gitgutter'
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- Editorconfig
   use 'editorconfig/editorconfig-vim'
